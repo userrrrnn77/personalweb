@@ -1,0 +1,287 @@
+.sidebar {
+    background: #1e1e1e;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+}
+
+.sidebarPhotos {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarImage {
+    width: 170px;
+    height: 170px;
+    background: #0c0c0c;
+    border-radius: 15px;
+}
+
+.sidebarTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarNama {
+    font-family: "JetBrains Mono", monospace;
+    color: orange;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.sidebarGelar {
+    font-weight: 200;
+    padding: 8px;
+    background: #0c0c0c;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.sidebarProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+.sidebarContainer {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-right: 5px;
+    gap: 8px;
+}
+
+.sidebarIcons {
+    padding: 5px;
+}
+
+.sidebarIcon {
+    font-size: 48px;
+    color: orange;
+    background: #0c0c0c;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+.sidebarKeterangan {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.sidebarJudul {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.sidebarRincian {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.sidebarSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    gap: 20px;
+}
+
+.iconsSocial {
+    font-size: 18px;
+}
+
+.fb {
+    color: #0866FF;
+}
+
+.gh {
+    color: #fff;
+}
+
+.tw {
+    color: #00acee;
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sidebarImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sidebarNama {
+        font-size: 22px;
+    }
+
+    .sidebarGelar {
+        font-size: 12px;
+    }
+
+    .sidebarKeterangan {
+        display: none;
+    }
+
+    .sidebarSocial {
+        display: none;
+    }
+
+    .sidebarProfile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sidebarIcon {
+        font-size: 32px;
+        padding: 6px;
+    }
+
+    .sidebarJudul {
+        display: none;
+    }
+
+    .sidebarRincian {
+        font-size: 6px;
+        /* background: #000; */
+    }
+
+    .sidebarContainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebarContainer:hover .ketikaMuncul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        bottom: 0;
+        top: 40px;
+        left: 0;
+    }
+
+    .lokasiRincian {
+        position: absolute;
+        left: 6px;
+    }
+
+    .emailRincian {
+        position: absolute;
+        left: 0;
+        right: 100px;
+    }
+
+    .phoneRincian {
+        position: absolute;
+        left: 0;
+        right: 10px;
+    }
+
+    .hobbyRincian {
+        position: absolute;
+        left: 10px;
+    }
+}
+
+@media (max-width: 834px) {
+    .sidebar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sidebarImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sidebarNama {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .sidebarGelar {
+        font-size: 14px;
+    }
+
+
+    .sidebarSocial {
+        display: none;
+    }
+
+    .sidebarProfile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .sidebarIcon {
+        font-size: 32px;
+        padding: 6px;
+    }
+
+    .sidebarJudul {
+        /* display: none; */
+        font-size: 8px;
+    }
+
+    .sidebarRincian {
+        font-size: 6px;
+        /* background: #000; */
+    }
+
+    .sidebarContainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebarContainer:hover .ketikaMuncul {
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+        align-items: center;
+        bottom: 0;
+        top: 40px;
+        left: 0;
+    }
+
+    .lokasiRincian {
+        /* position: absolute; */
+        left: 6px;
+    }
+
+    .emailRincian {
+        /* position: absolute; */
+        left: 0;
+        right: 100px;
+    }
+
+    .phoneRincian {
+        /* position: absolute; */
+        left: 0;
+        right: 10px;
+    }
+
+    .hobbyRincian {
+        /* position: absolute; */
+        left: 10px;
+    }
+}

@@ -1,0 +1,65 @@
+.navbar {
+    width: 100%;
+    height: 70px;
+}
+
+.navbarNavbar {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbarJudul {
+    font-family: "JetBrains Mono", monospace;
+    color: orange;
+    margin-bottom: 5px;
+    font-size: 32px;
+    width: auto;
+}
+
+.navHrKiri {
+    width: 80%;
+    border-bottom: 1.5px solid orange;
+    border-radius: 50px;
+}
+
+.navKanan{
+    display: flex;
+    flex-direction: column;
+}
+
+.navLinks {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLink{
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+}
+
+.garisNav{
+    display: flex; justify-content: space-between;
+    align-items: center;
+}
+
+.navLink:hover{
+    color: orange;
+}
+
+@media (max-width: 480px) {
+    .navbarJudul{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 834px) {
+    .navbarJudul{
+        font-size: 16px;
+    }
+}

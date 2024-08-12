@@ -1,0 +1,116 @@
+.contact {
+    width: 100%;
+    max-height: 100%;
+    padding: 10px;
+}
+
+.contactMap {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.contactMapRinci {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1) invert(1);
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
+    height: 50px;
+}
+
+.contactInput {
+    width: 50%;
+    padding: 20px;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #0f0f0f;
+    color: #ffffff;
+}
+
+.contactInputDesc {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.textareaInputContact {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #0f0f0f;
+    color: #ffffff;
+    padding: 12px;
+    font-family: "Poppins", sans-serif;
+}
+
+.textareaInputContact::placeholder {
+    text-align: left;
+    vertical-align: top;
+}
+
+.contactBtn {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px 10px 15px 10px;
+    background: #9933ff;
+    color: #ffffff;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btnIcon {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.contactBtn:hover {
+    background: #6120a2;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 480px) {
+
+    .contact {
+        margin-bottom: 180px;
+    }
+
+    .contactMap {
+        width: 100%;
+        height: 450px;
+    }
+
+    .contactInputDesc {
+        height: 320px;
+    }
+
+}

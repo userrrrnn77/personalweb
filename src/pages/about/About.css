@@ -1,0 +1,286 @@
+.about {
+    overflow-y: auto;
+    width: 100%;
+    max-height: 100%;
+    /* flex: -100; */
+    position: relative;
+    padding: 10px;
+}
+
+.aboutParagraf {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.aboutParagrafPertama {
+    margin-bottom: 7px;
+    padding: 5px;
+}
+
+.aboutParagrafDua{
+    padding: 5px;
+}
+
+.aboutTeknologi {
+    padding: 10px;
+}
+
+.aboutTekTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aboutIconTitle {
+    padding: 10px;
+    font-size: 46px;
+    color: orange;
+    background: #2f2f2f;
+    border-radius: 10px;
+}
+
+.aboutTekJudul {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 28px;
+    color: orange;
+}
+
+.aboutTekRincian {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tekRincian {
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.tekIcon {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.iconTekRincian {
+    padding: 5px;
+    background: #2f2f2f;
+    font-size: 48px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e34c28;
+}
+
+.tekRincianText{
+    margin-left: 10px;
+}
+
+.tekTitleRincian{
+    color: orange;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.css{
+    color: #264de4;
+}
+
+.js{
+    color: #f0db4f;
+}
+
+.react{
+    color: #61dbfb;
+}
+
+.nodejs{
+    color: #3c873a;
+}
+
+.mysql{
+    color: #00758f;
+}
+
+.mongodb{
+    color: #589636;
+}
+
+.xampp{
+    color: #fb7a24;
+}
+
+.testiTestimonials{
+    overflow-x: auto;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+
+.aboutTesti{
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+.testiTest{
+    position: relative;
+    width: 100%;
+    flex: 0 0 50%;
+}
+
+.testiImage{
+    position: absolute;
+    bottom: 110px;
+    left: 35px;
+}
+
+.testImageFace{
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    background: #222;
+    border-radius: 20px;
+    box-shadow:0 4px 16px rgba(95, 95, 95, 0.5);
+}
+
+.testiRincian{
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background: #111;
+    border-radius: 20px;
+    margin-top: 70px;
+}
+
+.testNama{
+    font-family: "JetBrains Mono", monospace;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px){
+    .about{
+        position: relative;
+    }
+
+    .aboutIconTitle{
+        font-size: 14px;
+        padding: 0;
+    }
+    .aboutTekJudul{
+        font-size: 18px;
+    }
+
+    .aboutTekRincian{
+        padding: 2px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .aboutTekRincian{
+        padding: 5px;
+    }
+
+    .iconTekRincian{
+        font-size: 14px;
+        padding: 0;
+    }
+    .tekTitleRincian{
+        font-size: 12px;
+    }
+    .tekTitleDesc{
+        font-size: 8px;
+    }
+    .testImageFace{
+        width: 50px;
+        height: 50px;
+        padding: 2px;
+    }
+    .testiTest{
+        position: relative;
+        top: 0;
+        margin-bottom: 0px;
+    }
+    .testiImage{
+        position: absolute;
+        bottom: 100px;
+    }
+
+    .testNama{
+        font-size: 12px;
+    }
+
+    .testIsi{
+        font-size: 8px;
+    }
+    .testiRincian{
+        padding-top: 50px;
+    }
+}
+
+/* @media (max-width: 834px) {
+    .about {
+        padding: 20px; 
+    }
+
+    .aboutIconTitle {
+        font-size: 24px; 
+        padding: 5px;
+    }
+
+    .aboutTekJudul {
+        font-size: 24px; 
+    }
+
+    .aboutTekRincian {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dua kolom */
+        /* gap: 15px;  */
+    /* }
+
+    .iconTekRincian {
+        font-size: 24px; 
+        padding: 5px;
+    }
+
+    .tekTitleRincian {
+        font-size: 14px; 
+    }
+
+    .tekTitleDesc {
+        font-size: 12px; 
+    }
+
+    .testImageFace {
+        width: 75px; 
+        height: 75px;
+        padding: 3px;
+    }
+
+    .testiTest {
+        width: 45%; 
+    }
+
+    .testiImage {
+        position: absolute;
+        bottom: 100px; 
+    }
+
+    .testNama {
+        font-size: 14px; 
+    }
+
+    .testIsi {
+        font-size: 12px; 
+    }
+
+    .testiRincian {
+        padding-top: 60px; 
+    }
+} */ 
